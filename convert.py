@@ -32,6 +32,9 @@ if __name__ == "__main__":
 
     all_paths = [raw_dir, *list(sorted(raw_dir.glob("**/*"), key=sortFiles))]
 
+    # Filter out close source not publishing online
+    all_paths = [path for path in all_paths if "close sources" not in str(path).lower()]
+
     for i in range(0, len(all_paths)):
         path = all_paths[i]
         doc_path = DocPath(path)
