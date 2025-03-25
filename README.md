@@ -1,5 +1,5 @@
 
-Live: [https://swe.auspham.dev/](https://swe.auspham.dev/)
+Live: [https://mirage-docs.netlify.app/](https://mirage-docs.netlify.app/)
 
 # This fork has
 
@@ -24,7 +24,7 @@ This has been configured properly for page previous/next with the graph settings
 
 ```toml
 [build]
-command = "rm -rf __obsidian __site && git clone https://github.com/rockmanvnx6/obsidian-zola.git __site && __site/run.sh || true"
+command = "rm -rf __obsidian __site && git clone https://github.com/ClementBobin/obsidian-zola.git __site && __site/run.sh || true"
 publish = "public"
 
 [build.environment]
